@@ -1,0 +1,127 @@
+.taskboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+    flex-grow: 1;
+}
+
+.task-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    min-width: 280px;
+    max-width: 100%;
+    border: 1px solid rgb(210, 207, 207);
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+}
+
+.task-column.drag-over {
+    border: 2px dashed #6150ec;
+    /* background: #f3f0ff; */
+}
+
+.to-do {
+    overflow-y: auto;
+    overflow-x: scroll;
+    background-color: #F9FBFE;
+    border-top: 4px solid #2E64E4;
+}
+
+.to-do .heading .right {
+    background-color: #E9F0FD;
+    color: #2E64E4;
+}
+
+.pending .heading .right {
+    background-color: #FEF2E2;
+    color: #FA8D0C;
+}
+
+.completed .heading .right {
+    background-color: #EDF9F0;
+    color: #24A446;
+}
+
+.pending {
+    background-color: #FEFAF6;
+    overflow-y: auto;
+    overflow-x: scroll;
+    border-top: 4px solid #FA8D0C;
+}
+
+.completed {
+    background-color: #FAFBF9;
+    overflow-y: auto;
+    overflow-x: scroll;
+    border-top: 4px solid #24A446;
+}
+
+.task-column::-webkit-scrollbar {
+    display: none;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.right {
+    justify-self: flex-end;
+    border: 1px solid rgb(210, 207, 207);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.task-card {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    line-height: 15px;
+    padding: 10px 15px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    border: 1px solid rgb(210, 207, 207);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.task-card div {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.task-card p {
+    margin-top: 15px;
+    font-size: 18px;
+    color: gray;
+}
+
+.task-card button {
+    padding: 9px;
+    background-color: #2E64E4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+    width: 70px;
+    display: flex;
+    align-self: flex-end;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

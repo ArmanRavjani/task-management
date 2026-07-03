@@ -1,0 +1,242 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+}
+
+.add-task {
+    border-radius: 25px;
+    box-shadow: 10px 20px 20px gray;
+    width: 1400px;
+    height: 800px;
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+}
+
+.add-task-1 {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F1EDFE;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.add-task-1 img {
+    margin-top: 80px;
+    border-radius: 10px;
+    height: 450px;
+    width: 400px;
+}
+
+.add-task-1 div h3 {
+    justify-self: center;
+    font-size: 30px;
+}
+
+.add-task-1 div p {
+    font-size: 20px;
+    color: gray;
+    line-height: 15px;
+}
+
+.add-task-2 {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.add-task-2-top {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-task-2-top-1 {
+    line-height: 18px;
+    padding: 20px;
+}
+
+.add-task-2-top-1 h3 {
+    font-size: 32px;
+}
+
+.add-task-2-top-1 p {
+    font-size: 20px;
+    color: gray;
+}
+
+.add-task-2-mid .form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    gap: 20px;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-fields textarea {
+    padding: 8px 20px;
+    font-size: 20px;
+    border: 1px solid #808080;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    height: 200px;
+    border: 1px solid rgb(210, 207, 207);
+}
+
+.form-fields label {
+    margin-left: 20px;
+    margin-right: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.form-fields input {
+    padding: 12px 20px;
+    font-size: 20px;
+    border: 1px solid #808080;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid rgb(210, 207, 207);
+}
+
+.add-task-2-bottom {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    border-top: 1px solid rgb(210, 207, 207);
+}
+
+.add-task-2-bottom div {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.add-task-2-bottom button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+input:hover {
+    border: 2px solid #6150EC;
+}
+
+textarea:hover {
+    border: 2px solid #6150EC;
+}
+
+@media (max-width: 1024px) {
+    .add-task {
+        flex-direction: column;
+        min-height: auto;
+        overflow: scroll;
+    }
+
+    .add-task-1 img {
+        display: flex;
+        height: 200px;
+        width: 200px;
+    }
+
+    .add-task-1,
+    .add-task-2 {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .add-task-1 img {
+        margin-top: 40px;
+        height: auto;
+        width: min(90%, 400px);
+    }
+
+    .add-task-2-top {
+        margin-top: 0;
+        gap: 0;
+        margin-left: 20px;
+    }
+
+    .add-task-2-top-1 {
+        gap: 0;
+    }
+
+    .add-task-2-top .x-icon {
+        margin-top: 0;
+        margin-left: 30px;
+    }
+
+    .add-task-2-top-1 p {
+        line-height: 25px;
+    }
+
+    .add-task-2-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .form-fields textarea,
+    .form-fields input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .add-task {
+        border-radius: 20px;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .add-task-1 {
+        padding: 20px 16px;
+    }
+
+    .add-task-2-top {
+        padding: 16px;
+    }
+
+    .add-task-2-mid .form {
+        padding: 16px;
+    }
+
+    .add-task-2-bottom {
+        display: flex;
+        margin-left: 20px;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .add-task-2-bottom div {
+        width: 100px;
+    }
+
+    .add-task-2-bottom button {
+        width: 150px;
+    }
+}

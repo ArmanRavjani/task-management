@@ -1,0 +1,55 @@
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f7fb;
+}
+
+.sidebar-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1500;
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .sidebar-backdrop {
+        display: block;
+    }
+}
+
+.dashboard-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pages {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+@media (max-width: 1024px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .pages {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 640px) {
+    .dashboard {
+        padding-bottom: 20px;
+    }
+
+    .pages {
+        padding: 12px;
+        gap: 12px;
+    }
+}

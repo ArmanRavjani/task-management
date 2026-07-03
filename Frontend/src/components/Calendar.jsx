@@ -1,0 +1,20 @@
+import React from "react";
+import "../styles/general.css";
+
+const Calendar = () => {
+  return (
+    <img
+      src="/image4.png"
+      alt=""
+      style={{
+        marginTop: 0,
+        marginLeft: "50px",
+        height: "750px",
+        width: "100%",
+        objectFit: "cover",
+      }}
+    />
+  );
+};
+
+export default Calendar;
