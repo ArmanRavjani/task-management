@@ -317,7 +317,7 @@ textarea:hover {
     .auth-container-2-top {
         margin-top: 10px;
         padding: 0;
-        line-height: 0;
+        line-height: 10px;
     }
 
     .login-form-part-top {
