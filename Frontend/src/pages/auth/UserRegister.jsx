@@ -30,6 +30,7 @@ const UserRegister = () => {
       );
       setAuthUser(data.user);
       toast.success(data.message);
+      e.target.reset();
       navigate("/dashboard");
     } catch (error) {
       toast.error(error?.response?.data.message || error.message);
