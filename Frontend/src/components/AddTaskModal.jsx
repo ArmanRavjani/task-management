@@ -3,7 +3,9 @@ import "../styles/addtask.css";
 import { X } from "lucide-react";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 const AddTaskModal = ({ setShowAddTask, setTasks }) => {
+  const navigate = useNavigate();
   const AddTask = async (e) => {
     e.preventDefault();
     const title = e.target.title.value;
@@ -18,6 +20,7 @@ const AddTaskModal = ({ setShowAddTask, setTasks }) => {
       );
       setTasks((prevTasks) => [...prevTasks, data.task]);
       setShowAddTask(false);
+      navigate("/dashboard");
       toast.success(data.message);
     } catch (error) {
       toast.error(error.response?.data?.message || "Something went wrong");

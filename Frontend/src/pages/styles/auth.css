@@ -294,7 +294,11 @@ textarea:hover {
     .form-group .register-inp {
         /* margin-left: 20px; */
         /* margin-right: 10px; */
-        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
     }
 
     .form-group-2 {
@@ -306,13 +310,14 @@ textarea:hover {
     }
 
     .auth-container-2 {
-        margin-top: 10;
+        margin-top: 10px;
         padding: 8px;
     }
 
     .auth-container-2-top {
         margin-top: 10px;
         padding: 0;
+        line-height: 0;
     }
 
     .login-form-part-top {
