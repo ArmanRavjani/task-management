@@ -30,8 +30,8 @@
 }
 
 .to-do {
-    overflow-y: auto;
-    overflow-x: scroll;
+    /* overflow-y: auto;
+    overflow-x: scroll; */
     background-color: #F9FBFE;
     border-top: 4px solid #2E64E4;
 }
@@ -53,15 +53,15 @@
 
 .pending {
     background-color: #FEFAF6;
-    overflow-y: auto;
-    overflow-x: scroll;
+    /* overflow-y: auto;
+    overflow-x: scroll; */
     border-top: 4px solid #FA8D0C;
 }
 
 .completed {
     background-color: #FAFBF9;
-    overflow-y: auto;
-    overflow-x: scroll;
+    /* overflow-y: auto;
+    overflow-x: scroll; */
     border-top: 4px solid #24A446;
 }
 
