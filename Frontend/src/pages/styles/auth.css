@@ -323,7 +323,12 @@ textarea:hover {
         padding: 0;
         flex-wrap: wrap;
         margin-left: 10px;
-        line-height: 35px;
+        line-height: 30px;
+    }
+
+    .auth-container-2-top p {
+        margin-left: 10px;
+        line-height: 25px;
     }
 
     .login-form-part-top {
