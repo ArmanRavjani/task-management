@@ -280,6 +280,7 @@ textarea:hover {
 
     .auth-container-1-mid {
         height: auto;
+        display: flex;
         margin-right: 30px;
     }
 
@@ -317,7 +318,7 @@ textarea:hover {
     .auth-container-2-top {
         margin-top: 10px;
         padding: 0;
-        line-height: 10px;
+        line-height: 25px;
     }
 
     .login-form-part-top {
