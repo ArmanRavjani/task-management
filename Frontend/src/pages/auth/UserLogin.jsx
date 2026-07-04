@@ -55,7 +55,7 @@ const UserLogin = () => {
           </div>
         </div>
         <div className="auth-container-2 login-form-part ">
-          <div className="login-form-part-top">
+          <div className="login-form-part-top auth-container-2-top">
             <h2>Login to your account</h2>
             <p>Enter your credentials to access your account</p>
           </div>
