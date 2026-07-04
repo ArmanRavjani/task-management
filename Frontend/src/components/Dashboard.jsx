@@ -29,7 +29,7 @@ const Dashboard = () => {
 
     try {
       const data = await axios.patch(
-        `http://localhost:3001/api/tasks/update-task/${taskId}`,
+        `https://task-management-backend-o7m3.onrender.com/api/tasks/update-task/${taskId}`,
         { status: newStatus },
         { withCredentials: true },
       );
@@ -42,7 +42,7 @@ const Dashboard = () => {
   const deleteTask = async (taskId) => {
     try {
       const { data } = await axios.delete(
-        `http://localhost:3001/api/tasks/delete-task/${taskId}`,
+        `https://task-management-backend-o7m3.onrender.com/api/tasks/delete-task/${taskId}`,
         {
           withCredentials: true,
         },
@@ -55,9 +55,12 @@ const Dashboard = () => {
   };
   const getAllTasks = async () => {
     try {
-      const { data } = await axios.get("http://localhost:3001/api/tasks", {
-        withCredentials: true,
-      });
+      const { data } = await axios.get(
+        "https://task-management-backend-o7m3.onrender.com/api/tasks",
+        {
+          withCredentials: true,
+        },
+      );
       setTasks(data.tasks);
     } catch (error) {
       toast.error(error.message);

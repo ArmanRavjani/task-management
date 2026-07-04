@@ -34,7 +34,7 @@ const UserUpdate = () => {
     setLoading(true);
     try {
       const { data } = await axios.put(
-        "http://localhost:3001/api/auth/user/update-profile",
+        "https://task-management-backend-o7m3.onrender.com/api/auth/user/update-profile",
         formData,
         {
           withCredentials: true,

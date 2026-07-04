@@ -10,7 +10,7 @@ const AddTaskModal = ({ setShowAddTask, setTasks }) => {
     const description = e.target.description.value;
     try {
       const { data } = await axios.post(
-        "http://localhost:3001/api/tasks",
+        "https://task-management-backend-o7m3.onrender.com/api/tasks",
         { title, description },
         {
           withCredentials: true,

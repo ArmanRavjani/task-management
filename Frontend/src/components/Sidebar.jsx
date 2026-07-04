@@ -19,7 +19,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
   const logout = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3001/api/auth/user/logout",
+        "https://task-management-backend-o7m3.onrender.com/api/auth/user/logout",
         { withCredentials: true },
       );
       setAuthUser(null);

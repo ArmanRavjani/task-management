@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
   const checkAuth = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3001/api/auth/user/check",
+        "https://task-management-backend-o7m3.onrender.com/api/auth/user/check",
         { withCredentials: true },
       );
       if (data.success) {

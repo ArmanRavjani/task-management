@@ -17,7 +17,7 @@ const UserRegister = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:3001/api/auth/user/register",
+        "https://task-management-backend-o7m3.onrender.com/api/auth/user/register",
         {
           userName,
           email,
