@@ -15,8 +15,13 @@
     max-width: 100%;
     border: 1px solid rgb(210, 207, 207);
     padding: 20px;
+    overflow: scroll;
     border-radius: 20px;
     transition: all 0.25s ease;
+}
+
+.task-column::-webkit-scrollbar {
+    display: none;
 }
 
 .task-column.drag-over {
